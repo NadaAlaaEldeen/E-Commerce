@@ -57,7 +57,7 @@ color: rgb(61, 105, 120);
 
 /* Home Page */
 #hero{
-    background-image: url("images/1.png");
+    background-image: url("../images/1.png");
     height: 50vh;
     width: 100%;
     padding: 15px 70px;
