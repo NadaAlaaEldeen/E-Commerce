@@ -1,3 +1,5 @@
+@import url("../components/navbar/nav.css");
+@import url("../components/ProductCard/product.css");
 *{
     margin: 0;
     padding: 0;
@@ -8,52 +10,7 @@ body{
     width: 100%;
 }
 
-/* Header */
-#header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 80px;
-    background: #fdfffb;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    left: 0;
-}
-#navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#navbar li{
-    list-style: none;
-    padding: 0px 19px;
-    padding-top: 20px;
-    position: relative;
-}
 
-#navbar li a{
-    text-decoration: none;
-    font-size:  16px;
-    font-weight:600;
-    color:rgb(0, 0, 0);
-}
-
-#navbar li a:hover,
-#navbar li a.active{
-color: rgb(61, 105, 120);
-}
-
-#navbar li a.active::after{
-    content:"";
-    bottom: -4px;
-    width: 55%;
-    height: 2px;
-    background: rgb(61, 105, 120);
-    position: absolute;
-    left: 20px;
-}
 
 /* Home Page */
 #hero{
@@ -84,47 +41,3 @@ h4{
     font-size: 30px;
     font-weight: bold;
 }
-#product1{
-    text-align: center;
-}
-#product1 h2{
-    padding-top: 50px;
-    margin-left: 10px;
-}
-#product1 .pro-container{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    flex-wrap: wrap;
-   
-}
-#product1 .pro{
-    width: 20%;
-    min-width: 250px;
-    padding: 5px 1px;
-    border: 1px solid #cce7d0;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-    margin: 15px 15px;
-    color: #000;
-    position: relative;
-
-}
-#product1 a{
-    font-weight: 500;
-    color: #000;
-}
-#product1 .pro img{
-    width: 70%;
-    border-radius: 20px;
-}
-#product1 .pro .des{
-    text-align: center;
-    padding:  10px 0;
-}
-#product1 .pro .des i{
-    font-size: 12px;
-    color: rgb(243, 181, 25);
-}
-
