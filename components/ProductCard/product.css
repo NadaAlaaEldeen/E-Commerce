@@ -30,7 +30,9 @@
     color: #000;
 }
 #product1 .pro img{
-    width: 70%;
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
     border-radius: 20px;
 }
 #product1 .pro .des{

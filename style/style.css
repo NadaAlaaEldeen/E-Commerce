@@ -1,43 +1,121 @@
 @import url("../components/navbar/nav.css");
 @import url("../components/ProductCard/product.css");
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
+
+    border: none;
+    outline: none;
 }
-body{
+
+body {
     width: 100%;
 }
 
 
 
 /* Home Page */
-#hero{
+#hero {
     background-image: url("../images/1.png");
     height: 50vh;
     width: 100%;
     padding: 15px 70px;
     color: #bedfb9;
 }
-h1{
+
+h1 {
     font-size: 50px;
     line-height: 64px;
-    color:#464545;
+    color: #464545;
 }
-h2{
+
+h2 {
     padding-top: 30px;
     font-size: 50px;
     line-height: 64px;
-    color:#464545;
+    color: #464545;
 }
-h4{
-    font-size:  20px;
-    color:#464545;
+
+h4 {
+    font-size: 20px;
+    color: #464545;
 }
-#hero button{
+
+#hero button {
     color: rgb(61, 105, 120);
     background-color: black;
     font-size: 30px;
     font-weight: bold;
+}
+
+
+/*? product style */
+/* #products-header
+{
+    background-image: url("../images/fashion-2591480.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+} */
+
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#search-container {
+    margin: 1em 0;
+}
+
+#search-container input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3em;
+}
+
+#search-container input:focus {
+    border-bottom-color:#6759ff;
+}
+
+#search-container button
+{
+   padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #6759ff;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+
+.my-button {
+    border: 2px solid #6759ff;
+    padding: 1em 1.4em;
+    border-radius: 3rem;
+    background:transparent;
+    color: #6759ff;
+    cursor: pointer;
+}
+
+.active-search
+{
+    background-color:#6759ff ;
+    color: white;
+}
+
+.hide
+{
+    display: none;
+}
+
+#product1 .myproduct-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+   
 }
