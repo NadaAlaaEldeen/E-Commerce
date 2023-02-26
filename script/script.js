@@ -1,41 +1,59 @@
 products = [
   {
-    product_name: "t-shirt",
-    product_img: "../images/products2/f1.jpg",
+    product_name: "shirt",
+    product_img: "images/products2/f1.jpg",
+    category: "topwear",
+    price: "150 EGP",
+  },
+  {
+    product_name: "shirt",
+    product_img: "images/products2/f1.jpg",
     category: "topwear",
     price: "150 EGP",
   },
   {
     product_name: "t-shirt",
-    product_img: "../images/products2/f1.jpg",
+    product_img: "images/product/t1.PNG",
     category: "topwear",
     price: "150 EGP",
   },
   {
     product_name: "Jacket",
-    product_img: "../images/products2/LC_j.jpg",
+    product_img: "images/products2/LC_j.jpg",
     category: "jacket",
     price: "150 EGP",
   },
   {
     product_name: "flower pant",
-    product_img: "../images/products2/f7.jpg",
+    product_img: "images/products2/f7.jpg",
     category: "bottomwear",
     price: "150 EGP",
   },
   {
-    product_name: "short",
-    product_img: "../images/products2/n6.jpg",
-    category: "bottomwear",
-    price: "150 EGP",
+    product_name: "half-Boot",
+    product_img: "images/products/p1.png",
+    category: "shoes",
+    price: "450 EGP",
   },
+  {
+    product_name: "Brown Boot",
+    product_img: "images/products/p5.PNG",
+    category: "shoes",
+    price: "600 EGP",
+  },
+  {
+    product_name: "Black Boot",
+    product_img: "images/products/p6.PNG",
+    category: "shoes",
+    price: "600 EGP",
+  }
 ];
 
 var myproduct_container = document.getElementById("myproducts");
 
 for (var i of products) {
   var product = `<div class="pro ${i.category}">
-<img src="${i.product_img}" alt="product img" />
+<img onclick="location.href='sproduct.html' "src="${i.product_img}" alt="product img" />
 <div class="des">
   <h5 class="product-name">${i.product_name}</h5>
   <div class="star">
