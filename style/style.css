@@ -17,9 +17,15 @@ body{
     background-image: url("../images/1.png");
     height: 50vh;
     width: 100%;
-    padding: 15px 70px;
-    color: #bedfb9;
-}
+    color: #bedfb9; 
+     /* background-size: cover;
+    background-position: top 0% right 0%; */
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;  
+} 
 h1{
     font-size: 50px;
     line-height: 64px;
@@ -37,7 +43,137 @@ h4{
 }
 #hero button{
     color: rgb(61, 105, 120);
-    background-color: black;
+    background-color: transparent;
     font-size: 30px;
+    border: transparent;
     font-weight: bold;
 }
+/* banner */
+#sm-banner{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 125px;
+    padding-right: 120px;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image:url("../images/b17.png");
+    min-width: 580px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    background-image:url("../images/b10.png");
+}
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+#sm-banner .banner-box:hover button{
+    background: #088178;
+    border: 1px solid #088178;
+}
+
+
+/* footer */
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 117px;
+    padding-top: 10px;
+    background-color: #e4e4e4;
+}
+
+footer .col{
+   display: flex;
+   flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+
+footer .col1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: #465b52;
+    padding-right:4px;
+    cursor: pointer;
+}
+footer .install .row img{
+    border : 1px solid #088178;
+    border-radius: 6px;
+
+}
+footer .install img{
+    margin : 10px 0 15px 0;
+
+}
+footer .follow i:hover,
+footer a:hover {
+    color:#088178
+}
+
+
