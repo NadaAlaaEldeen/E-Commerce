@@ -46,15 +46,45 @@ h4{
     background-image: url("../images/about/banner.png");
     height: 50vh;
     width: 100%;
-    color: #bedfb9;
-    color: white;
+    color:#dec475;
+    color:#dec475;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 #about h1{
-    color: white;
+    color:#dec475;
     font-weight: 700;
     font-size: 4vw;
+}
+.div1 {
+    width: 0px;
+    height: 15vh;
+    background-image: linear-gradient(to left,#343d52,#084365 ,#353e54);
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes example {
+    0%   {}
+    25%  {width: 25%;}
+    50%  { width: 100%;}
+    75%  { width: 100%;}
+    100% { width: 100%;}
+  }
+.container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    font-weight: 700;
+    font-size: 3vw;
+    color: black;
+}
+.container p{
+    font-size: 1vw;
 }
