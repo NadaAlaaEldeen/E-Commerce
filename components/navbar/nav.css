@@ -43,3 +43,99 @@ color: rgb(61, 105, 120);
     position: absolute;
     left: 20px;
 }
+#mobile,
+#close{
+    display: none;
+}
+
+/*media Query for home*/
+@media (max-width:799px) {
+    .section-p1{
+        padding-left: 10px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #fdfffb;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+
+    }
+    #navbar li a:hover{
+        color: rgb(61, 105, 120);
+    }   
+    #navbar li{
+        margin-bottom:25px;
+    }
+    #mobile{
+        display: flex;
+    }
+    #mobile a{
+        color: #1a1a1a;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #close{
+        display: flex;
+        position: absolute;
+        top: 30px;
+        color: #1a1a1a;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #hero{
+    height: 50vh;
+    padding: 12px 70px;
+    background-position: top 0% left 20%;
+    }
+    #hero .res2{
+        padding-left: 10px;
+        font-size: 27px;
+    }
+    #hero .res1{
+        padding-left: 10px;
+        font-size: 35px;
+    }
+    #hero .res{
+        font-size:  17px;
+        padding-left: 10px;
+    }
+    .section-p{
+        display: block;
+    } 
+    .section-p h4 {
+        font-size: 14px;
+        font-weight: 600;
+        padding-bottom: 1px;
+    }
+ 
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    
+    #sm-banner{
+        min-width: 100%;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 1111px;
+    }
+}
+
+
