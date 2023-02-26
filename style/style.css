@@ -41,3 +41,20 @@ h4{
     font-size: 30px;
     font-weight: bold;
 }
+/*About Us*/
+#about{
+    background-image: url("../images/about/banner.png");
+    height: 50vh;
+    width: 100%;
+    color: #bedfb9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about h1{
+    color: white;
+    font-weight: 700;
+    font-size: 4vw;
+}
