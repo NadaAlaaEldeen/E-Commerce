@@ -20,14 +20,14 @@ pro_container.innerHTML=product.repeat(8);
 //set card images
 var pro=document.getElementsByClassName("pro");
 // console.log(pro[0].childNodes[1])
-pro[0].childNodes[1].setAttribute("src","../images/products/p1.png")
-pro[1].childNodes[1].setAttribute("src","../images/products/p2.png")
-pro[2].childNodes[1].setAttribute("src","../images/products/p3.png")
-pro[3].childNodes[1].setAttribute("src","../images/products/p4.png")
-pro[4].childNodes[1].setAttribute("src","../images/products/p5.png")
-pro[5].childNodes[1].setAttribute("src","../images/products/p6.png")
-pro[6].childNodes[1].setAttribute("src","../images/products/p7.png")
-pro[7].childNodes[1].setAttribute("src","../images/products/p8.png")
+pro[0].childNodes[1].setAttribute("src","images/products/p1.png")
+pro[1].childNodes[1].setAttribute("src","images/products/p2.png")
+pro[2].childNodes[1].setAttribute("src","images/products/p3.png")
+pro[3].childNodes[1].setAttribute("src","images/products/p4.png")
+pro[4].childNodes[1].setAttribute("src","images/products/p5.png")
+pro[5].childNodes[1].setAttribute("src","images/products/p6.png")
+pro[6].childNodes[1].setAttribute("src","images/products/p7.png")
+pro[7].childNodes[1].setAttribute("src","images/products/p8.png")
 // for(let i=0;i<8;i++)
 // {
 //     `pro[${Number(i)}].childNodes[1].setAttribute("src","../../images/products/p${Number(i)+1}.png")`

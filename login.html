@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login_Signup</title>
+    <link rel="stylesheet" href="./style/login.css" />
+  </head>
+  <body>
+    <div class="full-page">
+      <div id="login-form" class="login-page">
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" onclick="login()" class="toggle-btn">
+              Log In
+            </button>
+            <button type="button" onclick="register()" class="toggle-btn">
+              Register
+            </button>
+          </div>
+          <!-- craeting login form -->
+          <form id="login" action="#" class="input-group-login">
+            <input
+              type="email"
+              class="input-field emailL"
+              placeholder="Email address"
+              required />
+            <p class="error-msg-email">Please enter a valid email</p>
+            <input
+              type="password"
+              class="input-field passwordL"
+              placeholder="Password"
+              required />
+            <p class="error-msg-passwd">Please enter a valid password</p>
+            <input type="checkbox" class="check-box" /><span
+              >Remember Password</span
+            >
+            <button type="submit" onclick="loginF()" class="submit-btn">
+              Log In
+            </button>
+          </form>
+          <!-- craeting resiteration form -->
+          <form id="register" action="#" class="input-group-register">
+            <input
+              type="text"
+              class="input-field fname"
+              placeholder="First Name"
+              required />
+            <input
+              type="text"
+              class="input-field lname"
+              placeholder="Last Name"
+              required />
+            <input
+              type="email"
+              class="input-field emailR"
+              placeholder="Email address"
+              required />
+            <p class="error-msg-email-R">Please enter a valid email</p>
+            <input
+              type="password"
+              class="input-field passwordR"
+              placeholder="Enter Password"
+              required />
+            <p class="error-msg-passwd-R">Please enter a valid password</p>
+            <input
+              type="password"
+              class="input-field passwordcn"
+              placeholder="Confirm Password"
+              required />
+            <p class="error-msg-passwdcn">
+              Password and confirm password does not match
+            </p>
+            <input type="checkbox" class="check-box" /><span
+              >I agree to the terms and conditions</span
+            >
+            <button type="submit" onclick="registerF()" class="submit-btn">
+              Register
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/login.js"></script>
+  </body>
+</html>
