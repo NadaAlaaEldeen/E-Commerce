@@ -1,22 +1,17 @@
+@import url("../components/navbar/nav.css");
 :root {
     --dark-color: #19283f;
     --green-color: #33d1cc;
     --yellow-color: #ffc400;
 }
 
-body {
+
+/* body {
     font-family: 'El Messiri', sans-serif;
     font-family: 'Pacifico', cursive;
     font-family: 'Roboto', sans-serif;
-}
+} */
 
-/* start nav css */
-
-.navbar {
-    background-color: white;
-}
-
-/* end nav css  */
 
 /* start product css */
 
@@ -68,44 +63,3 @@ body {
 }
 
 /* end related product css  */
-
-/* start footer css */
-
-.footer {
-    background-color: var(--dark-color);
-}
-
-.footer .copyright>span {
-    color: var(--green-color);
-}
-
-.footer .copyright div span {
-    color: var(--yellow-color);
-}
-
-.footer .contact ul svg {
-    width: 20px;
-    height: 20px;
-}
-
-.footer li {
-    cursor: pointer;
-}
-
-.footer .facebook {
-    background-color: #1877f2;
-}
-
-.footer .twitter {
-    background-color: #1da1f2;
-}
-
-.footer .linkedin {
-    background-color: #0077b5;
-}
-
-.footer .youtube {
-    background-color: #ff0000;
-}
-
-/* end footer css  */
