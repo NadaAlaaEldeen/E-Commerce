@@ -42,18 +42,17 @@ h4{
     font-weight: bold;
 }
 /*About Us*/
-#about{
+#about-head{
     background-image: url("../images/about/banner.png");
     height: 50vh;
     width: 100%;
-    color:#dec475;
     color:#dec475;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#about h1{
+#about-head h1{
     color:#dec475;
     font-weight: 700;
     font-size: 4vw;
