@@ -1,4 +1,5 @@
 @import url("../components/navbar/nav.css");
+@import url("../components/footer/footer.css");
 :root {
     --dark-color: #19283f;
     --green-color: #33d1cc;
