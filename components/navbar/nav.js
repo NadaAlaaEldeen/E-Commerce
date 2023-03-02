@@ -8,10 +8,14 @@ let navbar=
     <li><a href="product.html">Product</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li style="padding-top: 8px">
-    <a href="cart.html"><i class="bi bi-cart-check-fill fs-3 icon-black"></i></a>
+    <li >
+    <a href="cart.html">
+    <i class="bi bi-cart-check-fill fs-3 icon-black"> 
+    </i>
+    <sup style="font-size:1.5vw;color:red">0</sup>
+    </a>
     </li>
-    <li style="padding-top: 8px">
+    <li >
     <a href="login.html"> <i class="bi bi-person fs-3"></i></a>
     </li>
       <a href="#" id="close" ><i class="bi bi-x fs-1"></i></a>
@@ -25,9 +29,6 @@ let navbar=
 </div>
 `
 body.innerHTML=navbar;
-// console.log(window.location.href)
-// console.log(window.location.hostname)
-// console.log(window.location.origin)
 
 const bar = document.getElementById('bar');
 const c = document.getElementById('close');
@@ -43,4 +44,42 @@ if(c){
   c.addEventListener('click',() =>{
     nav.classList.remove('active');
   })
+}
+
+var path = window.location.pathname;
+var page = path.split("/").pop();
+console.log( page );
+   
+
+
+var li=document.getElementsByTagName("li");
+
+for(let i=0;i<4;i++) 
+{
+// console.log(li[i].childNodes[0].classList)
+li[i].childNodes[0].classList.remove("active")
+}
+
+// console.log(li[4].childNodes[1])
+
+switch(page)
+{
+  case"index.html":
+     li[0].childNodes[0].classList.add("active")
+      break;
+  case"product.html":
+     li[1].childNodes[0].classList.add("active")
+      break;
+  case"about.html":
+     li[2].childNodes[0].classList.add("active")
+     break;
+  case"contact.html":
+     li[3].childNodes[0].classList.add("active")
+     break;
+  case"cart.html":
+     li[4].childNodes[1].classList.add("active")
+     break;
+  case"login.html":
+     li[5].childNodes[1].classList.add("active")
+     break;
 }
