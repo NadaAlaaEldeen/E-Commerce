@@ -39,8 +39,8 @@
     width: 70% !important;
    
 }
-th,td,p
+th,td
 {
-    font-size:2vw ;
+    font-size:2vw !important;
    
 }
