@@ -24,13 +24,15 @@ function login() {
 function loginF() {
   let passwdLogin = document.querySelector(".passwordL");
   let userName = document.querySelector(".emailL");
+  const Email = localStorage.getItem("username");
+  const password = localStorage.getItem("password");
 
   if (
     userNameRe.test(userName.value) &&
-    passwdLoginRe.test(passwdLogin.value)
+    passwdLoginRe.test(passwdLogin.value) &&
+    passwdLogin.value == password &&
+    userName.value == Email
   ) {
-    localStorage.setItem("username", userName.value);
-    localStorage.setItem("password", passwdLogin.value);
     emailErrorMsg.style.display = "none";
     passwordErrorMsg.style.display = "none";
     return true;
@@ -67,6 +69,8 @@ function registerF() {
     emailErrorMsgR.style.display = "none";
     passwordErrorMsgR.style.display = "none";
     passwordCnErrorMsg.style.display = "none";
+    localStorage.setItem("username", userNameRegis.value);
+    localStorage.setItem("password", passwdRegis.value);
     return true;
   } else if (
     userNameRe.test(userNameRegis.value) != true &&
