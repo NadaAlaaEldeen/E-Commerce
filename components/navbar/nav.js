@@ -10,9 +10,9 @@ let navbar=
     <li><a href="contact.html">Contact</a></li>
     <li style="padding-top: 8px" >
     <a  href="cart.html">
-    <i class="bi bi-cart-check-fill fs-3 icon-black"> 
-    </i>
+    <i class="bi bi-cart-check-fill fs-3 icon-black">   
     <sup style="font-size:1.5vw;color:red">0</sup>
+    </i>
     </a>
     </li>
     <li style="padding-top: 8px" >
