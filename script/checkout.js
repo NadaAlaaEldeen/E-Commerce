@@ -60,9 +60,9 @@ function printError(elemId, hintMsg) {
     if (CVV.value == "") {
       printError("cvvErr", "Please enter your CVV number of card");
     } else {
-      var regex = /^[1-9]+[0-9]\d{7}$/;
+      var regex = /^[1-9]+[0-9]\d{2}$/;
       if (regex.test(CVV.value) === false) {
-        printError("cvvErr", "Please enter a valid cvv number of your card must contain 9 digits");
+        printError("cvvErr", "Please enter a valid cvv number of your card must contain 4 digits");
       } else {
         printError("cvvErr", "");
         cvvErr = false;
