@@ -176,4 +176,48 @@ footer a:hover {
     color:#088178
 }
 
+@media (max-width:477px) {
+    #hero{   
+        padding: 0px 0px;
+        background-position: top 0% left 25%;
+    }
+    #product1 h2 {
+        padding-top: 25px;
+        margin-left: -5px;
+    }
+    p{
+    margin: 15px -8px 20px 0;
+    }
+    .section-p1 {
+        padding-left: 0px;
+        padding-right: 18px;
+    }
+    #sm-banner{
+        display: block;
+        padding-left: 0px;
+        padding-right: 120px;
+        padding-top: 33px;
+    }
+    footer{
+        padding-left: 35px;
+        padding-top: 29px;
+    }
+    footer .col {
+        padding-top: 5px;
+    }
+    
+
+
+    /* #sm-banner{
+        min-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+/* } */
+  /*  }
+    #sm-banner .banner-box{
+        margin-top: 20px;
+    }*/
+ 
+}
 

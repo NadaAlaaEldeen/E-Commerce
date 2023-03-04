@@ -137,5 +137,9 @@ color: rgb(61, 105, 120);
         padding-right: 1111px;
     }
 }
-
+@media (max-width:477px) {
+    #header {
+        padding: 0px 30px 0px 0px;
+    }
+}
 
