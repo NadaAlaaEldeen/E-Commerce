@@ -120,3 +120,12 @@ h4{
     height: 5vh;
     font-size: 1vw;
 }
+
+/*checkout page*/
+.error{
+    color: red;
+    font-size: 1vw;
+}
+#payErr{
+    text-align: center;
+}
