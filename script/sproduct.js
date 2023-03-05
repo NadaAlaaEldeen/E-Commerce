@@ -3,11 +3,7 @@ var myimg=document.images
 var MainImg = document.getElementById("MainImg");
 var smallimg = document.getElementsByClassName("small-img");
 
-// for (var i = 0; i < smallimg.length; i++) {
-//   smallimg[i].onclick = function () {
-//     MainImg.src = smallimg[i].src;
-//   };
-// }
+
 var index=location.search.split("=")[1];
 // console.log(index)
 myimg[0].src=products[index].product_img
@@ -31,7 +27,7 @@ var details=`<h6 class="text-black-50">Home / ${products[index].product_name}</h
   <option value="XS">XS</option>
   <option value="S">S</option>
 </select>
-<input id="count" type="number" value="1" />
+<input id="count" type="number" value="1" min="1" />
 <button id="btnCard"class="buy-btn bg-black text-light px-4 py-2">
   Add To Cart
 </button>
@@ -88,10 +84,26 @@ function addDataToLocalStorageFrom(itemm) {
   window.localStorage.setItem("myitems", JSON.stringify(itemm));
 }
 // Add myitem
+
  btn.onclick = function () {
+  if(localStorage.getItem("username"))
+  {
   if(iid.value!=="")
   {
     addmyitemToArray(iid.value); // Add myitem To Array Of myitems
     count.value=1
   }
-};
+  }
+else
+{    
+swal({   title: "You can't go to cart page without login!",   
+text: "",   
+type: "warning",      
+confirmButtonColor: "gray",   
+confirmButtonText: "<a style='text-decoration:none;font-size:1.5vw;color:white' href ='login.html'> Log </a>",   
+closeOnConfirm: false,   
+closeOnCancel: false } 
+        );
+}
+}
+

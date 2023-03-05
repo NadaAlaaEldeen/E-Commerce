@@ -44,3 +44,20 @@ th,td
     font-size:1.7vw !important;
    
 }
+#banner h5{
+    color:#dec475 !important;
+    font-weight: 700;
+    font-size: 6vw !important;
+}
+#banner
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#banner p
+{
+    color:white !important;
+    font-size: 3vw;
+}

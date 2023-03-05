@@ -25,16 +25,16 @@ let footerContent=
       </div>
       <div class="col">
         <h4>About</h4>
-        <a href="#">About us</a>
+        <a href="about.html">About us</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Terms & Conditions</a>
-        <a href="#">Contact Us</a>
+        <a href="contact.html">Contact Us</a>
       </div>
 
       <div class="col">
         <h4>My Account</h4>
         <a href="login.html">Sign In</a>
-        <a href="#">View Cart</a>
+        <a href="cart.html">View Cart</a>
         <a href="#">My Wishlist</a>
         <a href="#">Track My Order</a>
         <a href="#">Help</a>

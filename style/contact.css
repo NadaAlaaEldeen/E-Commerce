@@ -1,0 +1,87 @@
+@import url("../components/navbar/nav.css");
+@import url("../components/footer/footer.css");
+/*About Us and Contact Us*/
+#about-head, #contact-head{
+    background-image: url("../images/about/banner.png");
+    height: 50vh;
+    width: 100%;
+    color:#d1b761;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about-head h1, #contact-head h1{
+    color:#d1b761;
+    font-weight: 700;
+    font-size: 4vw;
+}
+#about-head p, #contact-head p
+{
+    color:white !important;
+    font-size:2vw;
+    
+}
+.div1 {
+    width: 0px;
+    height: 15vh;
+    background-image: linear-gradient(to left,#343d52,#084365 ,#353e54);
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes example {
+    0%   {}
+    25%  {width: 25%;}
+    50%  { width: 100%;}
+    75%  { width: 100%;}
+    100% { width: 100%;}
+  }
+
+.container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    font-weight: 700;
+    font-size: 3vw;
+    color: black;
+}
+.container p{
+    font-size: 4vw;
+}
+
+/*contact page*/
+.contact li{
+    list-style: none;
+    display: flex;
+    padding: 1vh;
+    font-size:2.3vw;
+    font-weight: 300;
+}
+.contact li i{
+    padding-right: 4%;
+}
+.Form_container{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+}
+.Form_details input, textarea{
+    width: 100%;
+    margin: 1%;
+    padding: 1.5%;
+    outline: none;
+    border: 1px solid #e1e1e1;
+}
+.Form_details button{
+    background-color: #088178;
+    color: #fff;
+    width: 13vw;
+   
+    font-size: 3vw;
+}

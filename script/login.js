@@ -40,7 +40,7 @@ function loginF() {
     emailErrorMsg.style.display = "none";
     passwordErrorMsg.style.display = "none";
     
-    // return true;
+    return true;
 
   } else if (
     userNameRe.test(userName.value) != true &&
@@ -79,20 +79,7 @@ function registerF() {
     localStorage.setItem("useremail", userEmailRegis.value);
     localStorage.setItem("username", userNameRegis.value);
     localStorage.setItem("password", passwdRegis.value);
-    // --------cookie
-    // document.cookie = `username=${userNameRegis.value}`;
-    // document.cookie = `useremail=${userEmailRegis.value}`;
-    // document.cookie = `password=${passwdRegis.value}`;
-    // document.cookie = "username ="+ userNameRegis.value +"; file=//";
-    // document.cookie = "useremail ="+ userEmailRegis.value +"; file=//";
-    // document.cookie = "password ="+ passwdRegis.value +"; file=//";
 
-    // document.cookie = username 
-    // document.cookie = useremail 
-    // document.cookie = password 
-    // document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  
-    // ===========================
     return true;
   } else if (
     userNameRe.test(userEmailRegis.value) != true &&

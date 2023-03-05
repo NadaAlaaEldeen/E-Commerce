@@ -24,7 +24,7 @@ let navbar=
     <li style="padding-top: 8px" >
     <a  href="cart.html">
     <i class="bi bi-cart-check-fill fs-3 icon-black">   
-    <sup style="font-size:1.5vw;color:red">${num}</sup>
+    <sup style="font-size:1.5vw;color:#dec475">${num}</sup>
     </i>
     </a>
     </li>
@@ -37,7 +37,7 @@ let navbar=
 <div id="mobile">
 <i onclick="location.href='login.html'class="bi bi-person fs-1 icon-black"></i>
 <i onclick="location.href='#'class="bi bi-cart-check-fill fs-1 icon-black"></i>
-<i id="bar" class="bi bi-list fs-1"></i>
+<i id="bar" class="bi bi-list fs-1" style="color:#d1b761 !important; font-size:4vw !important"></i>
      
 </div>
 `

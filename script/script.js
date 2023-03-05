@@ -48,6 +48,12 @@ function filterProducts(category) {
   });
 }
 
+var filter=document.getElementById("filter");
+var buttons =document.getElementById("my-buttons");
+// console.log(buttons.classList)
+filter.onclick = function () {
+  buttons.classList.toggle("hide")
+}
 //search button
 let search = document.getElementById("search");
 let mysearch_input = document.getElementById("search-input")

@@ -17,84 +17,104 @@ body {
 
 
 
-/* Home Page */
-#hero {
+#hero{
     background-image: url("../images/1.png");
     height: 50vh;
     width: 100%;
-    padding: 15px 70px;
-    color: #bedfb9;
+    color: #bedfb9; 
+     /* background-size: cover;
+    background-position: top 0% right 0%; */
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;  
+} 
+h1{
+    font-size: 4vw;
+    line-height:1vw;
+    color:#464545;
 }
-
-h1 {
-    font-size: 50px;
-    line-height: 64px;
-    color: #464545;
-}
-
-h2 {
+h2{
     padding-top: 30px;
-    font-size: 50px;
+    font-size: 6vw;
     line-height: 64px;
-    color: #464545;
+    color:#464545;
 }
-
-h4 {
-    font-size: 20px;
-    color: #464545;
+h4{
+    font-size:  20px;
+    color:#464545;
 }
-
-#hero button {
+#hero button{
     color: rgb(61, 105, 120);
-    background-color: black;
+    background-color: transparent;
     font-size: 30px;
+    border: transparent;
     font-weight: bold;
 }
-
-
-.wrapper {
-    width: 95%;
-    margin: 0 auto;
-}
-
+/*product*/
 #search-container {
-    margin: 1em 0;
+display: flex;
+flex-direction: row;
+margin: auto;
+justify-content: center;
+align-items: center;
 }
 
 #search-container input {
     background-color: transparent;
-    width: 40%;
+    width: 50vw;
     border-bottom: 2px solid #110f29;
-    padding: 1em 0.3em;
+    margin: 5vw ;
+    font-size:3vw;
 }
 
 #search-container input:focus {
-    border-bottom-color:#6759ff;
+    border-bottom-color:hsl(46, 55%, 60%);
 }
 
 #search-container button
 {
    padding: 1em 2em;
   margin-left: 1em;
-  background-color: #6759ff;
+  background-color: #d1b761;
   color: #ffffff;
   border-radius: 5px;
   margin-top: 0.5em;
 }
 
 .my-button {
-    border: 2px solid #6759ff;
+
     padding: 1em 1.4em;
-    border-radius: 3rem;
     background:transparent;
-    color: #6759ff;
+    color: black;
     cursor: pointer;
+    font-size:2vw;
+    font-weight: 200;
+    width: 90%;
+
+}
+#filter,#search
+{
+ background:transparent !important;
+ color:#d1b761 !important;
+ font-size:6vw !important;
+}
+#search
+{
+ margin-left: 5vw;   
+font-size:4vw !important;
+}
+hr
+{
+color:#d1b761;
+width:80%;
+margin: auto;
 }
 
 .active-search
 {
-    background-color:#6759ff ;
-    color: white;
+    color:#d1b761 ;
 }
 
 .hide
@@ -109,30 +129,37 @@ h4 {
     flex-wrap: wrap;
    
 }
-/* ------------------------ */
+#product1 p
+{
+    font-size: 2.5vw;
+}
+#product1 h2
+{
+    font-size: 5vw;
+}
 /* banner */
 #sm-banner{
-    display: flex !important;
-    padding-top: 50px !important;
-    padding-bottom: 20px !important;
-    padding-left: 125px !important;
-    padding-right: 120px !important;
-    justify-content:space-around !important;
-    flex-wrap: wrap !important;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 125px;
+    padding-right: 120px;
+    justify-content:space-around;
+    flex-wrap: wrap;
 }
 
 #sm-banner .banner-box{
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
-    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
     background-image:url("../images/b17.png");
-    min-width: 580px !important;
-    height: 40vh !important;
-    background-size: cover !important;
-    background-position: center!important;
-    padding: 30px!important;
+    min-width: 580px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
 }
 #sm-banner .banner-box2{
     background-image:url("../images/b10.png");
@@ -148,40 +175,47 @@ h4 {
     font-weight: 800;
 }
 #sm-banner span {
-    color: #fff !important;
-    font-size: 14px !important;
-    font-weight: 500 !important;
-    padding-bottom: 15px !important;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
 }
 button.white {
-    font-size: 13px !important;
-    font-weight: 600 !important;
-    padding: 11px 18px !important;
-    color: #fff !important;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
     background-color: transparent;
-    border: 1px solid #fff!important;
-    cursor: pointer !important;
+    border: 1px solid #fff;
+    cursor: pointer;
 }
 #sm-banner .banner-box:hover button{
-    background: #088178 !important;
-    border: 1px solid #088178 !important;
+    background: #088178;
+    border: 1px solid #088178;
 }
+
 
 /*About Us and Contact Us*/
 #about-head, #contact-head{
     background-image: url("../images/about/banner.png");
     height: 50vh;
     width: 100%;
-    color:#dec475;
+    color:#d1b761;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 #about-head h1, #contact-head h1{
-    color:#dec475;
+    color:#d1b761;
     font-weight: 700;
     font-size: 4vw;
+}
+#about-head p, #contact-head p
+{
+    color:white !important;
+    font-size:2vw;
+    
 }
 .div1 {
     width: 0px;
@@ -212,7 +246,7 @@ button.white {
     color: black;
 }
 .container p{
-    font-size: 1vw;
+    font-size: 4vw;
 }
 
 /*contact page*/
@@ -220,7 +254,7 @@ button.white {
     list-style: none;
     display: flex;
     padding: 1vh;
-    font-size: 1.4vw;
+    font-size:2.3vw;
     font-weight: 300;
 }
 .contact li i{
@@ -242,9 +276,9 @@ button.white {
 .Form_details button{
     background-color: #088178;
     color: #fff;
-    width: 10%;
-    height: 5vh;
-    font-size: 1vw;
+    width: 13vw;
+   
+    font-size: 3vw;
 }
 .error{
     color: red;
@@ -253,3 +287,4 @@ button.white {
 #payErr{
     text-align: center;
 }
+
