@@ -1,7 +1,62 @@
 @import url("../components/navbar/nav.css");
 @import url("../components/footer/footer.css");
 /*About Us and Contact Us*/
-#about-head, #contact-head{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    /* border:3px solid red !important ;  */
+    border: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+}
+
+@media (max-width :400px){
+    .contact span{
+    font-size: 2.7vw;
+     }
+     .contact li{
+        font-size:2.7vw;
+    }
+    #contact-head p
+    {
+        color:white !important;
+        font-size:2.6vw;   
+    }
+    #contact-head h1{
+        font-size: 5vw;
+    }
+    .Form_container{
+        font-size: 2vw;
+    }
+}
+@media (min-width :401px)
+{
+    .contact span{
+    font-size: 1.5vw;
+    }
+    .contact li{
+        font-size:1.5vw;
+    }
+    #contact-head p
+    {
+        color:white !important;
+        font-size:2vw;
+        
+    }
+    #contact-head h1{
+        font-size: 4vw;
+    }
+    .Form_container{
+        font-size: 1.3vw;
+    }
+}
+
+#contact-head{
     background-image: url("../images/about/banner.png");
     height: 50vh;
     width: 100%;
@@ -11,17 +66,19 @@
     justify-content: center;
     align-items: center;
 }
-#about-head h1, #contact-head h1{
+#contact-head h1{
     color:#d1b761;
     font-weight: 700;
-    font-size: 4vw;
+    /* font-size: 4vw; */
 }
-#about-head p, #contact-head p
+#contact-head p
 {
     color:white !important;
-    font-size:2vw;
+    /* font-size:3vw; */
     
 }
+
+
 .div1 {
     width: 0px;
     height: 15vh;
@@ -40,26 +97,22 @@
     100% { width: 100%;}
   }
 
-.container div{
+.contact div{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.container h1{
+.contact h1{
     font-weight: 700;
     font-size: 3vw;
     color: black;
 }
-.container p{
-    font-size: 4vw;
-}
 
-/*contact page*/
 .contact li{
     list-style: none;
     display: flex;
     padding: 1vh;
-    font-size:2.3vw;
+    /* font-size:2.5vw; */
     font-weight: 300;
 }
 .contact li i{
@@ -77,11 +130,12 @@
     padding: 1.5%;
     outline: none;
     border: 1px solid #e1e1e1;
+    /* font-size: 2vw; */
 }
 .Form_details button{
     background-color: #088178;
     color: #fff;
     width: 13vw;
-   
-    font-size: 3vw;
+    font-size: 2.4vw;
 }
+
