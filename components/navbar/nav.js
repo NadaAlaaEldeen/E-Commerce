@@ -98,7 +98,7 @@ switch(page)
 }
 
 var person=document.getElementById("person")
-const nam = localStorage.getItem("username");
+const nam =localStorage.getItem("username")? localStorage.getItem("username"):"";
 // console.log(name)
-text = nam!=""? document.createTextNode(nam):"";
+text = document.createTextNode(nam);
 person.appendChild(text);
