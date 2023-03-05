@@ -246,3 +246,10 @@ button.white {
     height: 5vh;
     font-size: 1vw;
 }
+.error{
+    color: red;
+    font-size: 1vw;
+}
+#payErr{
+    text-align: center;
+}
