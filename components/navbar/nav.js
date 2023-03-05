@@ -1,11 +1,16 @@
 var body=document.getElementById("header")
 var num=0
-var items=JSON.parse(localStorage.getItem('myitems'));
-if(items.length>0)
+// console.log(items.length)
+if(localStorage.getItem("myitems"))
 {
+  var items=JSON.parse(localStorage.getItem('myitems'));
   for (var i = 0; i < items.length; i++) {
     num++;
   }
+}
+else
+{
+  num=0;
 }
 let navbar=
 `
