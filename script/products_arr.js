@@ -81,7 +81,7 @@ let products = [
     },
     {   product_id:9,
         product_name: "pink half-Boot",
-        product_img: "images/products/p5.png",
+        product_img: "images/products/p5.PNG",
         description:"wonderful half-boot",
         category: "shoes",
         price: "600 ",
