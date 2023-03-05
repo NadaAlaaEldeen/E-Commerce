@@ -7,11 +7,11 @@
 - Nehad Osman
 + Sondos Said
 
-# Technolgies & Programming language
-1- HTML
-2- css
-3- bootstrap
-4-javaScript
-5-jquery
+# :computer: Technolgies & Programming language
+1. HTML
+2. css
+3. bootstrap
+4. javaScript
+5. jquery
 
-# functionality
+# * functionality *
