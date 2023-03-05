@@ -48,37 +48,15 @@
                             <th scope="col">Remove</th>
                             <th scope="col" >Image</th>
                             <th scope="col" >Product</th>
-                            <th scope="col">Price</th>
+                            <th style="padding-left: 2vw;"scope="col">Price</th>
                             <th scope="col">Quantity</th>
                             <th scope="col">SubTotal</th>
+                            <th style="padding-left: 2vw;" scope="col" >size</th>
                            
                   </tr>
                 </thead>
-                <tbody >
-                  <tr class="table-group-divider align-middle">
-                    <th scope="row"><i class="bi bi-x-circle-fill fs-5 text-danger"></i></th>
-                    <td><img class="w-75" src="images/products2/f1.jpg" alt=""></td>
-                    <td>Shirt</td>
-                    <td>500 l.E</td>
-                    <td><input type="number" value="1"name="" id=""></td>
-                    <td>500 l.E</td>
-                  </tr>
-                  <tr class="table align-middle">
-                    <th scope="row"><i class="bi bi-x-circle-fill fs-5 text-danger"></i></th>
-                    <td><img class="w-75" src="images/products2/f2.jpg" alt=""></td>
-                    <td>Shirt</td>
-                    <td>500 l.E</td>
-                    <td><input type="number" value="1"name="" id=""></td>
-                    <td>500 l.E</td>
-                  </tr>
-                  <tr class="table align-middle">
-                    <th scope="row"><i class="bi bi-x-circle-fill fs-5 text-danger"></i></th>
-                    <td><img class="w-75" src="images/products2/f3.jpg" alt=""></td>
-                    <td>Shirt</td>
-                    <td>500 l.E</td>
-                    <td><input type="number" value="1"name="" id=""></td>
-                    <td>500 l.E</td>
-                  </tr>
+                <tbody  id="tableBody">
+                 
                 </tbody>
               </table>
             </div>
@@ -89,7 +67,7 @@
                     <div class="mb-3">
                         <label for="formGroupExampleInput" class="form-label d-block fw-bolder">Apply Coupon</label>
                         <input type="text" class="form-control w-75 float-start " id="formGroupExampleInput" placeholder="Enter Your Coupon">
-                        <a href="#" class="btn btn-secondary my-1 float-end">Apply</a>  
+                        <a id="Applycoupon" href="#" class="btn btn-secondary my-1 float-end">Apply</a>  
                     </div>
                       
                 </div>
@@ -105,13 +83,13 @@
                             <td>Shipping</td>
                         </tr>
                         <tr>
-                            <td>450 E.L</td>
+                            <td>Shipping</td>
                             <td>Free</td>
                         
                         </tr>
                         <tr>
                             <th scope="col">Total</th>
-                            <th scope="col">Shipping</th>
+                            <th scope="col" id="totalprice"></th>
                         </tr>
                         
                         </tbody>
@@ -132,9 +110,12 @@
         </div>
     </section>
     <script src="script/script.js"></script>
-    <script src="script/cart.js"></script>
     <script src="components/navbar/nav.js"></script>
     <script src="components/footer/footer.js"></script>
-    <script src="components/ProductCard/product.js"></script>
+    <script src="script/products_arr.js"></script>
+    <script src="script/sproduct.js"></script>
+    <script src="script/cart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
   </body>
 </html>

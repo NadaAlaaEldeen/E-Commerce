@@ -1,6 +1,8 @@
 var x = document.getElementById("login");
 var y = document.getElementById("register");
 var z = document.getElementById("btn");
+
+
 var emailErrorMsg = document.querySelector(".error-msg-email");
 var passwordErrorMsg = document.querySelector(".error-msg-passwd");
 var emailErrorMsgR = document.querySelector(".error-msg-email-R");
@@ -24,16 +26,22 @@ function login() {
 function loginF() {
   let passwdLogin = document.querySelector(".passwordL");
   let userName = document.querySelector(".emailL");
+  const Email = localStorage.getItem("useremail");
+  const password = localStorage.getItem("password");
+  const name = localStorage.getItem("username");
+  
 
   if (
     userNameRe.test(userName.value) &&
-    passwdLoginRe.test(passwdLogin.value)
+    passwdLoginRe.test(passwdLogin.value) &&
+    passwdLogin.value == password &&
+    userName.value == Email
   ) {
-    localStorage.setItem("username", userName.value);
-    localStorage.setItem("password", passwdLogin.value);
     emailErrorMsg.style.display = "none";
     passwordErrorMsg.style.display = "none";
-    return true;
+    
+    // return true;
+
   } else if (
     userNameRe.test(userName.value) != true &&
     passwdLoginRe.test(passwdLogin.value)
@@ -56,20 +64,38 @@ function loginF() {
   return false;
 }
 function registerF() {
+  let userNameRegis = document.querySelector(".fname");
+  let userEmailRegis = document.querySelector(".emailR");
   let passwdRegis = document.querySelector(".passwordR");
-  let userNameRegis = document.querySelector(".emailR");
   let passwdConf = document.querySelector(".passwordcn");
   if (
-    userNameRe.test(userNameRegis.value) &&
+    userNameRe.test(userEmailRegis.value) &&
     passwdLoginRe.test(passwdRegis.value) &&
     passwdConf.value == passwdRegis.value
   ) {
     emailErrorMsgR.style.display = "none";
     passwordErrorMsgR.style.display = "none";
     passwordCnErrorMsg.style.display = "none";
+    localStorage.setItem("useremail", userEmailRegis.value);
+    localStorage.setItem("username", userNameRegis.value);
+    localStorage.setItem("password", passwdRegis.value);
+    // --------cookie
+    // document.cookie = `username=${userNameRegis.value}`;
+    // document.cookie = `useremail=${userEmailRegis.value}`;
+    // document.cookie = `password=${passwdRegis.value}`;
+    // document.cookie = "username ="+ userNameRegis.value +"; file=//";
+    // document.cookie = "useremail ="+ userEmailRegis.value +"; file=//";
+    // document.cookie = "password ="+ passwdRegis.value +"; file=//";
+
+    // document.cookie = username 
+    // document.cookie = useremail 
+    // document.cookie = password 
+    // document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  
+    // ===========================
     return true;
   } else if (
-    userNameRe.test(userNameRegis.value) != true &&
+    userNameRe.test(userEmailRegis.value) != true &&
     passwdLoginRe.test(passwdRegis.value) &&
     passwdConf.value == passwdRegis.value
   ) {
@@ -77,7 +103,7 @@ function registerF() {
     passwordErrorMsgR.style.display = "none";
     passwordCnErrorMsg.style.display = "none";
   } else if (
-    userNameRe.test(userNameRegis.value) &&
+    userNameRe.test(userEmailRegis.value) &&
     passwdLoginRe.test(passwdRegis.value) != true &&
     passwdConf.value == passwdRegis.value
   ) {
@@ -85,7 +111,7 @@ function registerF() {
     passwordErrorMsgR.style.display = "block";
     passwordCnErrorMsg.style.display = "none";
   } else if (
-    userNameRe.test(userNameRegis.value) &&
+    userNameRe.test(userEmailRegis.value) &&
     passwdLoginRe.test(passwdRegis.value) &&
     passwdConf.value != passwdRegis.value
   ) {
@@ -93,7 +119,7 @@ function registerF() {
     passwordErrorMsgR.style.display = "none";
     passwordCnErrorMsg.style.display = "block";
   } else if (
-    userNameRe.test(userNameRegis.value) != true &&
+    userNameRe.test(userEmailRegis.value) != true &&
     passwdLoginRe.test(passwdRegis.value) != true &&
     passwdConf.value == passwdRegis.value
   ) {

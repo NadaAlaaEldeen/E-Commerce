@@ -1,5 +1,5 @@
 let products = [
-    {
+    { product_id:1,
       product_name: "t-shirt",
       product_img: "images/products2/f1.jpg",
       product_img1: "images/products2/f2.jpg",
@@ -7,9 +7,9 @@ let products = [
       product_img3: "images/products2/f4.jpg",
       description:"T-shirt in soft cotton jersey. Regular Fit.",
       category: "topwear",
-      price: "150 EGP",
+      price: "150 ",
     },
-    {
+    {   product_id:2,
       product_name: "shirt",
       product_img: "images/products2/n1.jpg",
       product_img1: "images/products2/n2.jpg",
@@ -18,9 +18,9 @@ let products = [
       description:"shirt in soft cotton jersey. Regular Fit.",
    
       category: "topwear",
-      price: "150 EGP",
+      price: "150 ",
     },
-    {
+    {   product_id:3,
       product_name: "Regular Fit Long Sleeve Oxford Men's Shirt",
       product_img: "images/p/p13.jpg",
       product_img1: "images/p/p14.jpg",
@@ -30,9 +30,9 @@ let products = [
       Oxford fabric
       One chest pocket`,
       category: "topwear",
-      price: "600 EGP",
+      price: "600 ",
     },
-    {
+    {   product_id:4,
       product_name: "Slim Fit Biker Collar Men's Coat",
       product_img: "images/products2/LC_j.jpg",
       product_img1: "images/p/p21.jpg",
@@ -40,79 +40,82 @@ let products = [
       product_img3: "images/p/p23.jpg",
       description:`With a stylish and modern style, the men's coat fits the body with its slim fit cut. The biker collar and the coat, which stands out with its energy, combines classic and sporty elegance.`,
       category: "jacket",
-      price: "1000 EGP",
+      price: "1000 ",
     },
-    {
+    {   product_id:5,
       product_name: "flower pant",
       product_img: "images/products2/f7.jpg",
       description:`wonderful flower pant`,
       category: "bottomwear",
-      price: "150 EGP",
+      price: "150 ",
     },
-    {
-      product_name: "Slim Fit Men's Jogger Sweatpants",
+    {   product_id:6,
+      product_name: "Slim Sweatpants",
       product_img: "images/p/p41.jpg",
       product_img1: "images/p/p42.jpg",
-      description:`Zipper pocket
+      description:`Slim Fit Men's Jogger Sweatpants 
+      Zipper pocket
       Waist with elastic and adjustable drawstring`,
 
       category: "bottomwear",
-      price: "300 EGP",
+      price: "300 ",
     },
 
-    {
-        product_name: "Shirt Collar Straight Long Sleeve Women's Tunic",
+    {   product_id:7,
+        product_name: "Shirt Long Sleeve",
         product_img: "images/p/p61.jpg",
         product_img1: "images/p/p62.jpg",
         product_img2: "images/p/p63.jpg",
         product_img3: "images/p/p64.jpg",
-        description:`wonderful flower pant`,
+        description:`Shirt Collar Straight Long Sleeve Women's Tunic
+        wonderful flower pant`,
         category: "topwear",
-        price: "650 EGP",
+        price: "650 ",
       },
-    {
+    {   product_id:8,
       product_name: "half-Boot",
       product_img: "images/products/p1.png",
       description:"wonderful half-boot",
       category: "shoes",
-      price: "450 EGP",
+      price: "450 ",
     },
-    {
+    {   product_id:9,
         product_name: "pink half-Boot",
         product_img: "images/products/p5.png",
         description:"wonderful half-boot",
         category: "shoes",
-        price: "600 EGP",
+        price: "600 ",
       },
-      {
+      {   product_id:10,
         product_name: "brown half-Boot",
         product_img: "images/products/p7.png",
         description:"wonderful half-boot",
         category: "shoes",
-        price: "450 EGP",
+        price: "450 ",
       },
-      {
+      {   product_id:11,
         product_name: "white half-Boot",
         product_img: "images/products/p8.png",
         description:"wonderful half-boot",
         category: "shoes",
-        price: "450 EGP",
+        price: "450 ",
       },
 
-    {
-        product_name: "Crew Neck Regular Long Sleeve Women's Tricot Sweater",
+    {   product_id:12,
+        product_name: "Crew Neck Sweater",
         product_img: "images/p/p71.jpg",
         product_img1: "images/p/p72.jpg",
         product_img2: "images/p/p73.jpg",
         product_img3: "images/p/p74.jpg",
 
-        description:`Ribbed ankles and bottom`,
+        description:`Crew Neck Regular Long Sleeve Women's Tricot Sweater
+        Ribbed ankles and bottom`,
         category: "topwear",
-        price: "450 EGP",
+        price: "450 ",
       },
 
-    {
-        product_name: "Brown Jacket Collar Regular Long Sleeve Women's Cachet Coat",
+    {   product_id:13,
+        product_name: "Brown Jacket ",
         product_img: "images/p/p53.jpg",
         product_img1: "images/p/p54.jpg",
         product_img2: "images/p/p51.jpg",
@@ -121,24 +124,24 @@ let products = [
         Front double pocket
         made of stamp fabric`,
         category: "jacket",
-        price: "1500 EGP",
+        price: "1500 ",
     },
-    {
-      product_name: "Crew Neck Short Sleeve Combed Cotton Men's T-shirt",
+    {   product_id:14,
+      product_name: "Short T-shirt",
       product_img: "images/p/p31.jpg",
       product_img1: "images/p/p32.jpg",
       product_img2: "images/p/p33.jpg",
       product_img3: "images/p/p34.jpg",
-      description:`From combed cotton fabric short sleeved T-Shirt`,
+      description:`Crew Neck Short Sleeve Combed Cotton Men's T-shirt From combed cotton fabric short sleeved T-Shirt`,
       category: "topwear",
-      price: "200 EGP",
+      price: "200 ",
     },
-    {
+    {   product_id:15,
       product_name: "Black Boot",
       product_img: "images/products/p6.PNG",
       description:"wonderful half-boot",
       category: "shoes",
-      price: "600 EGP",
+      price: "600 ",
     },
    
   ];

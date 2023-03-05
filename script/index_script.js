@@ -14,7 +14,7 @@ for (var x = 7; x < products.length; ++x) {
     </div>
     <h4>${products[x].price}</h4>
   </div>
-  <a href="#"><i class="bi bi-cart fs-3"></i></i></a>
+  
   </div>`;
 
   home_items.insertAdjacentHTML("afterbegin", item);

@@ -1,4 +1,9 @@
 var body=document.getElementById("header")
+var num=0
+var items=JSON.parse(localStorage.getItem('myitems'));
+  for (var i = 0; i < items.length; i++) {
+    num++;
+  }
 let navbar=
 `
 <a href="index.html"><img src="images/logo.png" alt="logo img" class="logo" /></a>
@@ -11,11 +16,11 @@ let navbar=
     <li style="padding-top: 8px" >
     <a  href="cart.html">
     <i class="bi bi-cart-check-fill fs-3 icon-black">   
-    <sup style="font-size:1.5vw;color:red">0</sup>
+    <sup style="font-size:1.5vw;color:red">${num}</sup>
     </i>
     </a>
     </li>
-    <li style="padding-top: 8px" >
+    <li style="padding-top: 8px" id="person">
     <a href="login.html"> <i class="bi bi-person fs-3"></i></a>
     </li>
       <a href="#" id="close" ><i class="bi bi-x fs-1"></i></a>
@@ -48,7 +53,7 @@ if(c){
 
 var path = window.location.pathname;
 var page = path.split("/").pop();
-console.log( page );
+// console.log( page );
    
 
 
@@ -83,3 +88,9 @@ switch(page)
      li[5].childNodes[1].classList.add("active")
      break;
 }
+
+var person=document.getElementById("person")
+const nam = localStorage.getItem("username");
+// console.log(name)
+text = nam!=""? document.createTextNode(nam):"";
+person.appendChild(text);

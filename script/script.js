@@ -16,7 +16,7 @@ for (var i in products) {
   </div>
   <h4>${products[i].price}</h4>
 </div>
-<a href="#"><i class="bi bi-cart fs-3"></i></i></a>
+
 </div>`;
 
   myproduct_container.insertAdjacentHTML("beforeend", product);
