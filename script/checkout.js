@@ -1,3 +1,30 @@
+var totalval;
+var total=document.getElementById("total")
+if(localStorage.getItem("total")){
+   totalval=localStorage.getItem("total");
+}
+else{
+  totalval=0
+}
+total.insertAdjacentHTML("afterbegin",totalval);
+var summ=document.getElementById("summ")
+// console.log(summ.parentElement)
+var all_summaryitems = document.getElementById("all_summaryitems")
+for(i=0;i<items.length;i++)
+{
+var selprod=`
+<hr class="w-75"/>
+<section class="d-flex my-2">
+<div class="d-flex w-25 "><img class="w-50" src="${products[[items[i].pid]-1].product_img}" alt=""></div>
+<div class="d-flex w-25 ">${products[[items[i].pid]-1].product_name}</div>
+<div class="d-flex w-25 ">${products[[items[i].pid]-1].price}EGP</div>
+<div class="d-flex w-25 "><h3>${items[i].count}</h3></div>
+</section>
+
+`
+summ.parentElement.insertAdjacentHTML("beforeend", selprod);
+}
+
 // Defining a function to display error message
 function printError(elemId, hintMsg) {
     document.getElementById(elemId).innerHTML = hintMsg;
@@ -73,7 +100,20 @@ function printError(elemId, hintMsg) {
     if ((nameErr || numErr || cvvErr || payErr ) == true) {
       return false;
     } else {
-      swal("<h2> Shipped! </h2>", "<p> Your name is "+`${name.value}`+"</p>"+"<p> By "+`${payments[0]}`+"</p>"+ "<p> with card-num " + `${num.value}`+"</p>", "success");
+      // swal("<h2> Shipped! </h2>", "<p> Your name is "+`${name.value}`+"</p>"+"<p> By "+`${payments[0]}`+"</p>"+ "<p> with card-num " + `${num.value}`+"</p>", "success");
+      swal("<h2> Shipped! </h2>", "<p> Your name is "+`${name.value}`+"</p>"+"<p> By "+`${payments[0]}`+"</p>"+ "<p> with card-num " + `${num.value}`+"</p>", "success", {
+        button: "OK",
+      }).then(() => {
+        all_summaryitems.innerHTML = "<h3 class='text-center my-4'>Order Summary</h3>"
+        // console.log(totalval)
+        // totalval=0
+        // console.log(totalval)
+        window.localStorage.removeItem("total");
+        window.localStorage.removeItem("myitems");
+        // totalval=0
+        // total.insertAdjacentHTML("afterbegin",val);
+        total.innerHTML = 0
+      });
       name.value = "";
       num.value = "";
       CVV.value = "";
@@ -85,26 +125,7 @@ function printError(elemId, hintMsg) {
       return false
       
     }
-   
   };
-  var total=document.getElementById("total")
-  var totalval=localStorage.getItem("total");
-  total.insertAdjacentHTML("afterbegin",totalval);
-  var summ=document.getElementById("summ")
-  console.log(summ.parentElement)
-  for(i=0;i<items.length;i++)
-{
-var selprod=`
-<hr class="w-75"/>
-<section class="d-flex my-2">
-<div class="d-flex w-25 "><img class="w-50" src="${products[[items[i].pid]-1].product_img}" alt=""></div>
-<div class="d-flex w-25 ">${products[[items[i].pid]-1].product_name}</div>
-<div class="d-flex w-25 ">${products[[items[i].pid]-1].price}EGP</div>
-<div class="d-flex w-25 "><h3>${items[i].count}</h3></div>
-</section>
-
-`
-summ.parentElement.insertAdjacentHTML("beforeend", selprod);
-}
+  
   
   
