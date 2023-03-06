@@ -1,5 +1,6 @@
 # E-Commerce Web Site 
-
+## Description:
+#### This is E-Commerce Site for Shopping Online and shipping all items you like it.
 # Team
 - Nada Alaa
 + Rannen Mahmoud 
