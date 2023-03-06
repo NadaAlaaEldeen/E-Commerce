@@ -1,7 +1,7 @@
 var footer=document.getElementById("footer")
 let footerContent=
 `
-<footer class="section-p">
+<footer class="section-p footer">
       <div class="col">
         <!-- <img class="logo" src="images/logo.png" alt="logo" /> -->
         <h4>Contact</h4>
@@ -39,7 +39,7 @@ let footerContent=
         <a href="#">Track My Order</a>
         <a href="#">Help</a>
       </div>
-      <div class="col install">
+      <div class="col install footer_install">
         <h4>Install App</h4>
         <p>From App Store or google play</p>
         <div class="col1">

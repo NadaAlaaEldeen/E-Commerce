@@ -1,10 +1,28 @@
 /* footer */
 p{
-    font-size: 16px;
+    /* font-size: 16px; */
     color: #465b52;
-    margin: 15px 0 20px 0;
+    /* margin: 15px 0 20px 0; */
 }
-
+@media (max-width :600px){
+    footer h4{
+        font-size: 2.5vw;
+    }
+    footer p{
+        font-size: 2.8vw;
+    }
+    footer a{
+        font-size: 2.8vw;
+    }
+}
+@media (min-width :601px){
+    footer p{
+        font-size: 0.9vw;
+    }
+    footer a{
+        font-size: 0.9vw;
+    }
+}
 footer{
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +30,16 @@ footer{
     padding-left: 117px;
     padding-top: 10px;
     background-color: #e4e4e4;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    border: 1px solid #e4e4e4;
 }
+
+/* .footer_install{
+padding-bottom: 0px;
+margin-bottom: 0%;
+border: 1px solid;
+} */
 
 footer .col{
    display: flex;
@@ -31,27 +58,27 @@ footer .logo{
     margin-bottom: 30px;
 }
 footer h4{
-    font-size: 14px;
+    /* font-size: 1.1vw; */
     font-weight: 600;
-    padding-bottom: 20px;
+    padding-bottom: 5%;
 }
 footer p{
-    font-size: 13px;
+    /* font-size: 0.9vw; */
     margin: 0 0 8px 0;
 }
 
 footer a{
-    font-size: 13px;
+    /* font-size: 0.9vw; */
     text-decoration: none;
     color: #222;
     margin-bottom: 10px;
 }
-footer .follow{
+/* footer .follow{
     margin-top: 20px;
-}
+} */
 footer .follow i{
     color: #465b52;
-    padding-right:4px;
+    padding-right:4%;
     cursor: pointer;
 }
 footer .install .row img{

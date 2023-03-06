@@ -1,7 +1,57 @@
 @import url("../components/navbar/nav.css");
 @import url("../components/footer/footer.css");
+
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Spartan', sans-serif;
+/* border:3px solid red !important ;  */
+border: none;
+outline: none;
+}
+
+body {
+width: 100%;
+}
+
+@media (max-width :500px){
+    .container p{
+        font-size: 4vw;
+    }
+    marquee{
+        font-size: 4vw;
+    }
+    #about-head p
+    {
+        color:white !important;
+        font-size:2.6vw;   
+    }
+    #about-head h1{
+        font-size: 5vw;
+    }
+}
+
+@media (min-width :500px){
+    .container p{
+        font-size: 1.6vw;
+    }
+    marquee{
+        font-size: 1.5vw;
+    }
+    #about-head p
+    {
+        color:white !important;
+        font-size:2vw;
+        
+    }
+#about-head h1{
+    font-size: 4vw;
+}
+}
+
 /*About Us and Contact Us*/
-#about-head, #contact-head{
+#about-head{
     background-image: url("../images/about/banner.png");
     height: 50vh;
     width: 100%;
@@ -11,16 +61,10 @@
     justify-content: center;
     align-items: center;
 }
-#about-head h1, #contact-head h1{
+#about-head h1{
     color:#d1b761;
     font-weight: 700;
-    font-size: 4vw;
-}
-#about-head p, #contact-head p
-{
-    color:white !important;
-    font-size:2vw;
-    
+    /* font-size: 4vw; */
 }
 .div1 {
     width: 0px;
@@ -50,6 +94,7 @@
     font-size: 3vw;
     color: black;
 }
-.container p{
+/* .container p{
     font-size: 4vw;
-}
+} */
+
