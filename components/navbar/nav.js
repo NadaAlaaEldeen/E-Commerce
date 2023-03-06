@@ -110,7 +110,7 @@ person.appendChild(text);
 if(localStorage.getItem("username"))
 { 
   person.childNodes[1].innerHTML=`
-  <a href=""> <i class="bi bi-door-closed-fill fs-3 p-1" onclick="logout()"></i></a>
+  <a href=""> <i class="bi bi-box-arrow-left fs-3 p-1" onclick="logout()"></i></a>
   <a href="login.html"> <i class="bi bi-person fs-3 p-1"></i></a>
    `
 }
