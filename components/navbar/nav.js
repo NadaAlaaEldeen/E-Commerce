@@ -101,7 +101,6 @@ var person=document.getElementById("person")
 const nam =localStorage.getItem("username")? localStorage.getItem("username"):"";
 // console.log(name)
 text = document.createTextNode(nam);
-person.appendChild(text);
 // if(localStorage.getItem("username"))
 // { 
 //   // console.log(person.childNodes[1].outerHTML)
@@ -110,8 +109,8 @@ person.appendChild(text);
 if(localStorage.getItem("username"))
 { 
   person.childNodes[1].innerHTML=`
-    <a href=""> <i class="bi bi-box-arrow-right fs-3 p-1" onclick="logout()"></i></a>
-    <a href="login.html"> <i class="bi bi-person fs-3 p-1"></i></a>`
+       <span> ${nam} </span>  
+    <a href=""> <i class="bi bi-box-arrow-right fs-3 p-2" onclick="logout()"></i></a>`
 }
 function logout()
 { 
