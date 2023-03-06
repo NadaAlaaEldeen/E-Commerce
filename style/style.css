@@ -85,7 +85,7 @@ align-items: center;
 
 .my-button {
 
-    padding: 1em 1.4em;
+    padding:0.5vw;
     background:transparent;
     color: black;
     cursor: pointer;
@@ -131,160 +131,10 @@ margin: auto;
 }
 #product1 p
 {
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 #product1 h2
 {
-    font-size: 5vw;
-}
-/* banner */
-#sm-banner{
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    padding-left: 125px;
-    padding-right: 120px;
-    justify-content:space-around;
-    flex-wrap: wrap;
-}
-
-#sm-banner .banner-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    background-image:url("../images/b17.png");
-    min-width: 580px;
-    height: 40vh;
-    background-size: cover;
-    background-position: center;
-    padding: 30px;
-}
-#sm-banner .banner-box2{
-    background-image:url("../images/b10.png");
-}
-#sm-banner h4{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
-}
-#sm-banner h2{
-    color: #fff;
-    font-size: 28px;
-    font-weight: 800;
-}
-#sm-banner span {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    padding-bottom: 15px;
-}
-button.white {
-    font-size: 13px;
-    font-weight: 600;
-    padding: 11px 18px;
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
-    cursor: pointer;
-}
-#sm-banner .banner-box:hover button{
-    background: #088178;
-    border: 1px solid #088178;
-}
-
-
-/*About Us and Contact Us*/
-#about-head, #contact-head{
-    background-image: url("../images/about/banner.png");
-    height: 50vh;
-    width: 100%;
-    color:#d1b761;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#about-head h1, #contact-head h1{
-    color:#d1b761;
-    font-weight: 700;
     font-size: 4vw;
-}
-#about-head p, #contact-head p
-{
-    color:white !important;
-    font-size:2vw;
-    
-}
-.div1 {
-    width: 0px;
-    height: 15vh;
-    background-image: linear-gradient(to left,#343d52,#084365 ,#353e54);
-    position: relative;
-    animation-name: example;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes example {
-    0%   {}
-    25%  {width: 25%;}
-    50%  { width: 100%;}
-    75%  { width: 100%;}
-    100% { width: 100%;}
-  }
-
-.container div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.container h1{
-    font-weight: 700;
-    font-size: 3vw;
-    color: black;
-}
-.container p{
-    font-size: 4vw;
-}
-
-/*contact page*/
-.contact li{
-    list-style: none;
-    display: flex;
-    padding: 1vh;
-    font-size:2.3vw;
-    font-weight: 300;
-}
-.contact li i{
-    padding-right: 4%;
-}
-.Form_container{
-    display: flex;
-    flex-direction: column;
-    padding: 3%;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
-}
-.Form_details input, textarea{
-    width: 100%;
-    margin: 1%;
-    padding: 1.5%;
-    outline: none;
-    border: 1px solid #e1e1e1;
-}
-.Form_details button{
-    background-color: #088178;
-    color: #fff;
-    width: 13vw;
-   
-    font-size: 3vw;
-}
-.error{
-    color: red;
-    font-size: 1vw;
-}
-#payErr{
-    text-align: center;
 }
 

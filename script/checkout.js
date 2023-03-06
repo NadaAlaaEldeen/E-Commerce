@@ -83,15 +83,28 @@ function printError(elemId, hintMsg) {
         checkboxes[i].checked = false;
         }
       return false
-      // Creating a string from input data for preview
-      // var dataPreview = "You've entered the following details: \n" + "Full Name: " + name + "\n" + "Email Address: " + email + "\n" + "Mobile Number: " + mobile + "\n" + "Country: " + country + "\n" + "Gender: " + gender + "\n";
-      // if (hobbies.length) {
-      //   dataPreview += "Hobbies: " + hobbies.join(", ");
-      // }
-      // Display input data in a dialog box before submitting the form
-      // alert("dataPreview");
+      
     }
    
   };
+  var total=document.getElementById("total")
+  var totalval=localStorage.getItem("total");
+  total.insertAdjacentHTML("afterbegin",totalval);
+  var summ=document.getElementById("summ")
+  console.log(summ.parentElement)
+  for(i=0;i<items.length;i++)
+{
+var selprod=`
+<hr class="w-75"/>
+<section class="d-flex my-2">
+<div class="d-flex w-25 "><img class="w-50" src="${products[[items[i].pid]-1].product_img}" alt=""></div>
+<div class="d-flex w-25 ">${products[[items[i].pid]-1].product_name}</div>
+<div class="d-flex w-25 ">${products[[items[i].pid]-1].price}EGP</div>
+<div class="d-flex w-25 "><h3>${items[i].count}</h3></div>
+</section>
+
+`
+summ.parentElement.insertAdjacentHTML("beforeend", selprod);
+}
   
   

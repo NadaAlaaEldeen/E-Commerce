@@ -1,0 +1,14 @@
+@import url("../components/navbar/nav.css");
+@import url("../components/footer/footer.css");
+.error{
+    color: red;
+    font-size: 1vw;
+}
+#payErr{
+    text-align: center;
+}
+th,td
+{
+    font-size:1.7vw !important;
+   
+}

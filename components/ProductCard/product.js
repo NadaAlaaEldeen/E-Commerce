@@ -28,8 +28,5 @@ pro[4].childNodes[1].setAttribute("src","images/products/p5.PNG")
 pro[5].childNodes[1].setAttribute("src","images/products/p6.PNG")
 pro[6].childNodes[1].setAttribute("src","images/products/p7.png")
 pro[7].childNodes[1].setAttribute("src","images/products/p8.png")
-// for(let i=0;i<8;i++)
-// {
-//     `pro[${Number(i)}].childNodes[1].setAttribute("src","../../images/products/p${Number(i)+1}.png")`
-//     // console.log(`pro[${Number(i)}].childNodes[1].setAttribute("src","../../images/products/p${Number(i)+1}.png")`)
-// }
+
+// var pro=document.getElementsByClassName("pro")

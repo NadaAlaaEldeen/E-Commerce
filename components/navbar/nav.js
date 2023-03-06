@@ -102,3 +102,8 @@ const nam =localStorage.getItem("username")? localStorage.getItem("username"):""
 // console.log(name)
 text = document.createTextNode(nam);
 person.appendChild(text);
+// if(localStorage.getItem("username"))
+// { var logout=` <a href="#" id="close" ><i class="bi bi-x fs-1"></i></a>`
+//   // person.appendChild(logout)
+//  logout.insertAdjacentHTML("afterbegin", person);
+// }

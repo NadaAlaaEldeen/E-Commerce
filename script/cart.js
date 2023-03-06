@@ -1,10 +1,4 @@
 var table=document.getElementById("tableBody");
-// console.log(items)
-// console.log(products)
-// console.log(num)
-// console.log(items[0])
-// console.log(products[0].product_id)
-// console.log(products[[items[0].pid]-1])
 var totalprice=document.getElementById("totalprice");
 var coupon=document.getElementById("formGroupExampleInput");
 var Applycoupon=document.getElementById("Applycoupon");
@@ -12,7 +6,6 @@ var discount,disvalue=0,total=0;
 
 for(i=0;i<items.length;i++)
 {
-// console.log(products[items[i].pid].product_id)
 var selected_product=`
 <tr class="table-group-divider align-middle" data-id="${products[[items[i].pid]-1].product_id}">
 <th class="remove"scope="row"><i class="bi bi-x-circle-fill fs-5 text-danger"></i></th>
@@ -25,8 +18,8 @@ var selected_product=`
 <td style="padding-left:3.2vw">${items[i].size}</td>
 </tr>
 `
-table.insertAdjacentHTML("afterbegin", selected_product);
 total+=products[[items[i].pid]-1].price *  items[i].count
+table.insertAdjacentHTML("afterbegin", selected_product);
 }
 totalprice.innerHTML=`${total}`
 Applycoupon.onclick = function () {
@@ -52,7 +45,7 @@ Applycoupon.onclick = function () {
                 }
                 totalprice.innerHTML=`${total-(total*disvalue)} EGP`;
             }
-     
+            localStorage.setItem("total", total);
  // Click On Task Element
 table.addEventListener("click", (e) => {
     // Delete Button
@@ -71,3 +64,4 @@ function deleteTaskWith(taskId) {
     items = items.filter((item) => item.pid != taskId);
     addDataToLocalStorageFrom(items);
   }
+  
