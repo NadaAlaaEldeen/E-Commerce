@@ -1,8 +1,25 @@
+// export var usritems=[],j=0;
 var table=document.getElementById("tableBody");
 var totalprice=document.getElementById("totalprice");
 var coupon=document.getElementById("formGroupExampleInput");
 var Applycoupon=document.getElementById("Applycoupon");
 var discount,disvalue=0,total=0;
+console.log(items)
+// console.log(items[0].email===localStorage.getItem("useremail"))
+// ---------handling  multiy user tasks
+// for(let i=0;i<items.length;i++)
+// {
+//  if(items[i].email===localStorage.getItem("useremail"))
+//  { 
+//    usritems[j]=items[i]
+// //    console.log(i)
+// //    console.log(j)
+// //    console.log(items[i])
+//    j++;
+//  }
+// }
+// console.log(usritems)
+// items=usritems
 
 for(i=0;i<items.length;i++)
 {

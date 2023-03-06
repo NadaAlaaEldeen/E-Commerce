@@ -153,7 +153,7 @@ button.white {
     }
     
 #search-container input:focus {
-        border-bottom-color:hsl(46, 55%, 60%);
+        border-bottom-color:hwb(46 38% 18%);
     }
     
 #search-container button

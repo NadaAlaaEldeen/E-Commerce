@@ -1,3 +1,4 @@
+// import { usritems } from "cart.js";
 // Defining a function to display error message
 function printError(elemId, hintMsg) {
     document.getElementById(elemId).innerHTML = hintMsg;
@@ -91,7 +92,9 @@ function printError(elemId, hintMsg) {
   var totalval=localStorage.getItem("total");
   total.insertAdjacentHTML("afterbegin",totalval);
   var summ=document.getElementById("summ")
-  console.log(summ.parentElement)
+ 
+  console.log(usritems)
+  
   for(i=0;i<items.length;i++)
 {
 var selprod=`

@@ -69,7 +69,9 @@ if (localStorage.getItem("myitems")) {
 }
 function addmyitemToArray(myitemText) {
   // myitem Data
+
   const myitem = {
+    email:localStorage.getItem("useremail"),
     id:Date.now(),
     pid:iid.value,
     count: count.value,
@@ -85,13 +87,21 @@ function addDataToLocalStorageFrom(itemm) {
 }
 // Add myitem
 
+function added()
+{
+  swal("<p>Added to your cart</p>"+"<img src= 'images/cart.png'style = 'height:20vh';> ");
+    
+}
+
  btn.onclick = function () {
   if(localStorage.getItem("username"))
   {
   if(iid.value!=="")
   {
     addmyitemToArray(iid.value); // Add myitem To Array Of myitems
+    added()
     count.value=1
+
   }
   }
 else

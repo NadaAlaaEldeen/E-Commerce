@@ -19,13 +19,18 @@
     border: 1px solid #cce7d0;
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.02);
     margin: 15px 15px;
     color: #000;
     position: relative;
 
 }
-
+#product1 .pro:hover
+              { border-radius:10%;
+               opacity: 1;
+               object-fit: fill;
+               transform: scale(1.1)
+              }
 
 #product1 a{
     font-weight: 500;

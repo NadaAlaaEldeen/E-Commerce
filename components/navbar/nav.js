@@ -102,8 +102,39 @@ const nam =localStorage.getItem("username")? localStorage.getItem("username"):""
 // console.log(name)
 text = document.createTextNode(nam);
 person.appendChild(text);
-// if(localStorage.getItem("username"))
-// { var logout=` <a href="#" id="close" ><i class="bi bi-x fs-1"></i></a>`
-//   // person.appendChild(logout)
-//  logout.insertAdjacentHTML("afterbegin", person);
-// }
+if(localStorage.getItem("username"))
+{ 
+  // console.log(person.childNodes[1].outerHTML)
+  person.childNodes[1].innerHTML=`<i class="bi bi-door-closed-fill fs-3" onclick="presslogout();return false;"></i>`
+}
+function logout()
+{ alert("done")
+  window.localStorage.removeItem("username");
+  window.localStorage.removeItem("useremail");
+  window.localStorage.removeItem("password");
+  window.localStorage.removeItem("myitems");
+  window.localStorage.removeItem("total");
+}
+
+function presslogout()
+{
+  // alert("loged out")
+swal({   title: "Log Out ...!",   
+text: "Are you sure You want to logout",   
+type: "warning",      
+showCancelButton: true,   
+    confirmButtonColor: "#DD6B55",   
+    confirmButtonText: "Remove My Account!",   
+    cancelButtonText: "I am not sure!",   
+    closeOnConfirm: false,   
+    closeOnCancel: false }, 
+    function(isConfirm){   
+        if (isConfirm) 
+    {   
+       swal("Account Removed!", "Your account is removed!", "success");  
+        
+        } 
+        else {  
+            swal("Hurray", "Account is not removed!", "error");   
+            } });
+          }

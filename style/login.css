@@ -20,13 +20,19 @@
 
 .form-box {
     width: 400px;
-    height: 550px;
-    /* height: 100%; */
-    position: relative;
+    /* height: 550px; */
+    height: 80%;
     top: 10%;
     background: rgba(114, 113, 113, 0.3);
     padding: 10px;
     overflow: hidden;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.9rem;
+    backdrop-filter: blur(15px);
+    position: relative;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -81,9 +87,11 @@
     border-left: 0;
     border-top: 0;
     border-right: 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 0.2vw solid white;
     outline: none;
     background: transparent;
+    font-size:1.3vw;
+    
 
 }
 
@@ -99,6 +107,7 @@
     border-radius: 30px;
     color: white;
     font-weight: bold;
+
 }
 
 .check-box {
@@ -117,7 +126,7 @@ span {
 }
 
 #login input {
-    color: white;
+    color: black;
     font-size: 15;
 }
 
@@ -165,3 +174,4 @@ span {
     left: "50px";
     display: none;
 }
+
