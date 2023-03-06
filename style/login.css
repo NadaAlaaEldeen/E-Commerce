@@ -1,3 +1,4 @@
+@import url("../components/navbar/nav.css");
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +10,7 @@
     height: 100%;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./background.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     position: absolute;
     display: flex;
@@ -21,7 +20,8 @@
 
 .form-box {
     width: 400px;
-    height: 600px;
+    height: 550px;
+    /* height: 100%; */
     position: relative;
     top: 10%;
     background: rgba(114, 113, 113, 0.3);
