@@ -37,7 +37,7 @@ let navbar=
 <div id="mobile">
 <i onclick="location.href='login.html'class="bi bi-person fs-1 icon-black"></i>
 <i onclick="location.href='#'class="bi bi-cart-check-fill fs-1 icon-black"></i>
-<i id="bar" class="bi bi-list fs-1" style="color:#d1b761 !important; font-size:4vw !important"></i>
+<i id="bar" class="bi bi-list" style="color:#d1b761 !important; font-size:7vw !important"></i>
      
 </div>
 `
