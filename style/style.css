@@ -141,10 +141,16 @@ button.white {
 @media(max-width:600px){
     .slide img{
         height: 40vh; }
+        .my-button {
+            font-size:2.6vw;
+        }
 }
 @media(min-width:601px){
     .slide img{
         height: 70vh; }
+        .my-button {
+            font-size:2vw;
+        }
 }
 .slide img{
         width: 100%;
@@ -192,7 +198,7 @@ button.white {
         background:transparent;
         color: black;
         cursor: pointer;
-        font-size:2vw;
+        /* font-size:2vw; */
         font-weight: 200;
         width: 90%;
     
