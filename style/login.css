@@ -17,9 +17,15 @@
     justify-content: center;
 
 }
-
+@media(max-width:400px){
+    .form-box {
+        width: 80vw;}
+}
+@media(min-width:401px){
+    .form-box {
+        width: 400px;}
+}
 .form-box {
-    width: 400px;
     height: 550px;
     /* height: 100%; */
     position: relative;
