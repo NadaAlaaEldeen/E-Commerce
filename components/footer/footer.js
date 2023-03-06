@@ -19,7 +19,6 @@ let footerContent=
             <i class="bi bi-instagram"></i>
             <i class="bi bi-pinterest"></i>
             <i class="bi bi-youtube"></i>
-            <p>© 2023 dejavu</p>
           </div>
         </div>
       </div>

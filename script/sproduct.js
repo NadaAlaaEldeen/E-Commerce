@@ -58,7 +58,7 @@ var btn=document.getElementById("btnCard");
 var iid=document.getElementById("item_id");
 // var size=document.getElementById("size");
 var count=document.getElementById("count");
-var size;
+var size="XL";
   $("select.size").change(function() {
     size = $(this).children("option:selected").val();
   });

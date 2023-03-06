@@ -37,7 +37,7 @@ let navbar=
 <div id="mobile">
 <i onclick="location.href='login.html'class="bi bi-person fs-1 icon-black"></i>
 <i onclick="location.href='#'class="bi bi-cart-check-fill fs-1 icon-black"></i>
-<i id="bar" class="bi bi-list fs-1" style="color:#d1b761 !important; font-size:4vw !important"></i>
+<i id="bar" class="bi bi-list fs-1" style="color:#d1b761 !important; font-size:7vw !important"></i>
      
 </div>
 `
@@ -102,13 +102,21 @@ const nam =localStorage.getItem("username")? localStorage.getItem("username"):""
 // console.log(name)
 text = document.createTextNode(nam);
 person.appendChild(text);
+// if(localStorage.getItem("username"))
+// { 
+//   // console.log(person.childNodes[1].outerHTML)
+//   person.childNodes[1].innerHTML=`<i class="bi bi-door-closed-fill fs-3" onclick="presslogout();return false;"></i>`
+// }
 if(localStorage.getItem("username"))
 { 
-  // console.log(person.childNodes[1].outerHTML)
-  person.childNodes[1].innerHTML=`<i class="bi bi-door-closed-fill fs-3" onclick="presslogout();return false;"></i>`
+  person.childNodes[1].innerHTML=`
+  <a href=""> <i class="bi bi-door-closed-fill fs-3 p-1" onclick="logout()"></i></a>
+  <a href="login.html"> <i class="bi bi-person fs-3 p-1"></i></a>
+   `
 }
 function logout()
-{ alert("done")
+{ 
+  // alert("done")
   window.localStorage.removeItem("username");
   window.localStorage.removeItem("useremail");
   window.localStorage.removeItem("password");
@@ -116,25 +124,25 @@ function logout()
   window.localStorage.removeItem("total");
 }
 
-function presslogout()
-{
-  // alert("loged out")
-swal({   title: "Log Out ...!",   
-text: "Are you sure You want to logout",   
-type: "warning",      
-showCancelButton: true,   
-    confirmButtonColor: "#DD6B55",   
-    confirmButtonText: "Remove My Account!",   
-    cancelButtonText: "I am not sure!",   
-    closeOnConfirm: false,   
-    closeOnCancel: false }, 
-    function(isConfirm){   
-        if (isConfirm) 
-    {   
-       swal("Account Removed!", "Your account is removed!", "success");  
+// function presslogout()
+// {
+//   // alert("loged out")
+// swal({   title: "Log Out ...!",   
+// text: "Are you sure You want to logout",   
+// type: "warning",      
+// showCancelButton: true,   
+//     confirmButtonColor: "#DD6B55",   
+//     confirmButtonText: "Remove My Account!",   
+//     cancelButtonText: "I am not sure!",   
+//     closeOnConfirm: false,   
+//     closeOnCancel: false }, 
+//     function(isConfirm){   
+//         if (isConfirm) 
+//     {   
+//        swal("Account Removed!", "Your account is removed!", "success");  
         
-        } 
-        else {  
-            swal("Hurray", "Account is not removed!", "error");   
-            } });
-          }
+//         } 
+//         else {  
+//             swal("Hurray", "Account is not removed!", "error");   
+//             } });
+//           }
